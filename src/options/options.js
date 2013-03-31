@@ -91,7 +91,7 @@ function setDefaultURL()
 
 function setYTURL() 
 {
-    var YTURL = "www.youtube.com/watch?v=gvdf5n-zI14"; // Being agnostic of http or https.
+    var YTURL = "http://www.youtube.com/watch?v=gvdf5n-zI14"; 
     document.getElementById("nopeurl").value = YTURL;
 }
 
