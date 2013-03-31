@@ -1,4 +1,9 @@
 // Main logic
+
+// First run tests
+if(!localStorage["nopeurl"])
+    firstrun();
+
 chrome.browserAction.onClicked.addListener(function(tab)
 {
     redirect();
@@ -22,4 +27,15 @@ function nukehist()
         var minutesago = now - localStorage["HistDelAmount"];
         chrome.history.deleteRange({startTime: minutesago, endTime: now}, function(){});
     }
+}
+
+function firstrun()
+{
+    // Nope URL
+    localStorage["nopeurl"] = "http://no.pe/";
+    
+    // History Nuking
+    localStorage["ckb_enableHistoryNuke"] = "checked";
+    localStorage["HistDelAmount"] = 600000;
+    localStorage["ckb_nukeEverything"] = "notchecked";
 }
