@@ -3,7 +3,7 @@
 // Save options functions
 function saveOptionById(id)
 {
-    localStorage[id] = document.getElementsById(id).value;
+    localStorage[id] = document.getElementById(id).value;
 }
 
 function saveCheckboxById(id)
@@ -74,12 +74,12 @@ function setDefaults()
 
 function setDOMEvents() 
 {
-    document.querySelector('#pb_SetDefault').addEventListener('click', setDefaultURL);
-    document.querySelector('#pb_SetYT').addEventListener('click', setYTURL);
-    document.querySelector('#ckb_nukeEverything').addEventListener('click', nukeEverythingConfirm);
+    document.getElementById('pb_SetDefault').addEventListener('click', setDefaultURL);
+    document.getElementById('pb_SetYT').addEventListener('click', setYTURL);
+    document.getElementById('ckb_nukeEverything').addEventListener('click', nukeEverythingConfirm);
     
-    document.querySelector('#pb_Save').addEventListener('click', saveAll);
-    document.querySelector('#pb_RestoreDefaults').addEventListener('click', setDefaults);
+    document.getElementById('pb_Save').addEventListener('click', saveAll);
+    document.getElementById('pb_RestoreDefaults').addEventListener('click', setDefaults);
 }
 
 // Misc functins
