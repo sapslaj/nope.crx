@@ -23,6 +23,12 @@ function saveAll()
     saveCheckboxById("ckb_enableHistoryNuke");
     saveOptionById("HistDelAmount");
     saveCheckboxById("ckb_nukeEverything");
+    
+    document.getElementById("message").innerHTML = "Options saved!";
+    window.setTimeout(function()
+    {
+        document.getElementById("message").innerHTML = "";
+    }, 5000);
 }
 
 // Restore options functions
