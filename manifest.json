@@ -1,0 +1,28 @@
+{
+  "name": "nope.crx",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Instant Nope-ing",
+  "homepage_url": "http://no.pe",
+  "icons": 
+  {
+    "19": "icons/icon19.png"
+  },
+  "default_locale": "en",
+  "background": 
+  {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "options_page": "src/options/index.html",
+  "browser_action": 
+  {
+    "default_icon": "icons/icon19.png",
+    "default_title": "NOPE"
+  },
+  "permissions": 
+  [
+    "tabs",
+    "history"
+  ]
+}

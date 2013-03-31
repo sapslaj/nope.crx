@@ -1,0 +1,6 @@
+*.class
+*.pyc
+*.pyo
+*.DS_Store
+*.project
+*.pem
