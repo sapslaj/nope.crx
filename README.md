@@ -15,7 +15,6 @@ TODO
 --------
 (for the generous people)
 
-- Build Options dialog
 - Remove surviving traces of boilerplate
 - Icons
 - Add clipboard functionality
