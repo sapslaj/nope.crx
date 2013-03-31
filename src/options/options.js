@@ -8,10 +8,10 @@ function saveOptionById(id)
 
 function saveCheckboxById(id)
 {
-    // USE THIS FOR CHECKBOXES ONLAR
-    if(id.checked)
+    var val = document.getElementById(id);
+    if(val.checked)
         localStorage[id] = "checked";
-    else if(!id.checked)
+    else if(!val.checked)
         localStorage[id] = "notchecked";
     else
         localStorage[id] = "undefined";    
